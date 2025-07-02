@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/noticeNo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="번호"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/noticeName"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="제목"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/noticeContents"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="내용"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/noticeDate"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="날짜"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="1dp"/>
+
+</androidx.cardview.widget.CardView>

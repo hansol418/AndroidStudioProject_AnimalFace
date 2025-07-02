@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="24dp"
+        android:text="재미보따리는\n여러분의 재미 있는 이야기를 듣고 싶어요!"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/createGameName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="제목을 적어 주세요."
+        android:layout_below="@id/title"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/createQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="질문을 차례대로 적어주세요."
+        android:layout_below="@id/createGameName"
+        android:layout_marginBottom="16dp"
+        android:lines="4"
+        android:minLines="4" />
+
+    <EditText
+        android:id="@+id/createAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="질문에 대한 답변을 적어 주세요. 예)1번질문 답변 1)xx 2)xx"
+        android:layout_below="@id/createQuestion"
+        android:layout_marginBottom="16dp"
+        android:lines="4"
+        android:minLines="4" />
+
+    <EditText
+        android:id="@+id/createResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="결과를 작성 해 주세요."
+        android:layout_below="@id/createAnswer"
+        android:layout_marginBottom="24dp"
+        android:lines="4"
+        android:minLines="4" />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보내기"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="초기화"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
